@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-gradient-to-r from-teal-400 to-emerald-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-teal-500/50 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-in-out;
+  }
+  .btn-secondary {
+    @apply px-4 py-2 bg-slate-800 text-slate-300 font-semibold rounded-lg shadow border border-slate-700 hover:bg-slate-700 hover:text-white active:translate-y-0.5 transition-all duration-200 ease-in-out;
+  }
+  .btn-danger {
+    @apply px-4 py-2 bg-gradient-to-r from-rose-500 to-red-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-rose-500/50 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-in-out;
+  }
+  .input-field {
+    @apply w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-teal-500 transition-all text-slate-100 placeholder-slate-400 backdrop-blur-sm;
+  }
+  .glass-card {
+    @apply bg-slate-800/40 backdrop-blur-md border border-slate-700/50 rounded-2xl shadow-xl overflow-hidden;
+  }
+}
