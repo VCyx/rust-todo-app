@@ -34,6 +34,26 @@ A simple full-stack Todo application built with Rust.
    trunk serve
    ```
 
+## Production Build
+
+To build the application for a production release with all WASM size optimizations applied:
+
+1. Build the backend:
+
+   ```bash
+   cd server
+   cargo build --release
+   ```
+
+   _The optimized backend binary will be at `target/release/server`_
+
+2. Build the frontend:
+   ```bash
+   cd ui
+   trunk build --release
+   ```
+   _The optimized frontend web assets (HTML, CSS, JS, and compressed WASM) will be generated inside `ui/dist`_
+
 ## Features
 
 - View all Todos on the Home page.
