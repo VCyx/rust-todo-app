@@ -10,8 +10,13 @@ sea-orm = { version = "1.1.0", features = ["sqlx-postgres", "runtime-tokio-rustl
 sea-orm-migration = "1.1.0"
 serde = { version = "1.0.203", features = ["derive"] }
 serde_json = "1.0.117"
-tower-http = { version = "0.5.2", features = ["cors", "trace"] }
+tower-http = { version = "0.5.2", features = ["cors", "trace", "fs"] }
 dotenvy = "0.15.7"
 tracing = "0.1.40"
 tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
 sqlx = { version = "0.8.2", features = ["postgres", "runtime-tokio"] }
+leptos = { version = "0.6.15", default-features = false, features = ["ssr"] }
+leptos_axum = { version = "0.6.15" }
+leptos_config = { version = "0.6.15" }
+leptos_router = { version = "0.6.15", default-features = false, features = ["ssr"] }
+ui = { path = "../ui", default-features = false, features = ["ssr"] }
